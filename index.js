@@ -23,7 +23,7 @@ $('.slider-1 > .owl-carousel').owlCarousel({
     nav: true,
     dots: false,
     animateOut: 'fadeOut',
-    navText: ['<img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/btn_prev2.png">', '<img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/btn_next2.png">'],
+    navText: ['<img src="./img/btn_prev2.png">', '<img src="./img/btn_next2.png">'],
     responsive: {
         0: {
             items: 1
