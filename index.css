@@ -93,7 +93,7 @@ html, body {
 /* 스크롤리파이 적용 */
 .pagination {
     position: fixed;
-    left: calc(50% + 720px);
+    left: calc(50% + 620px);
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
@@ -1159,7 +1159,6 @@ html[data-scrollify-page-index="3"] .pagination a.active .hover-text {
 
 /* 사회공헌 컨텐츠 */
 .public-relations {
-
     position: relative;
 }
 
