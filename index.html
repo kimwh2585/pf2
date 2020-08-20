@@ -1,0 +1,423 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>경동 - kimyangsun</title>
+
+    <!-- 모바일에서 화면배율을 디바이스 크기 기준으로 설정 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- 호환성 문제를 어느정도 해결 -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- 스크롤리파이 적용 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js"></script>
+
+    <!-- 아울 캐러셀 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
+
+    <!-- 폰트어썸 불러오기 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- css 불러오기 -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <!-- 상단 헤더 메뉴바 -->
+    <div class="header pc-only">
+        <div class="sub-menu-bg">
+            <div class="top-bar con relative">
+                <div class="top-logo"><a href="#"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/logo_pc.png" alt=""></a></div>
+                <div class="menu-container">
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#">회사소개</a>
+                            <ul class="sub-2-menu">
+                                <li><a href="#">CEO 인사말</a></li>
+                                <li><a href="#">경영이념</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">C.I</a></li>
+                                <li><a href="#">관계사 소개</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell">
+                            <a href="#">사업분야</a>
+                            <ul class="sub-2-menu">
+                                <li><a href="#">국내자원개발</a></li>
+                                <li><a href="#">해외자원개발</a></li>
+                                <li>
+                                    <a href="#">엔지니어링사업</a>
+                                    <ul class="sub-3-menu">
+                                        <li><a href="#">광산&amp;일반장비</a></li>
+                                        <li><a href="#">발전소</a></li>
+                                        <li><a href="#">공사업</a></li>
+                                        <li><a href="#">기술개발연구</a></li>
+                                        <li><a href="#">자료실</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">임대사업</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell">
+                            <a href="#">기술혁신</a>
+                            <ul class="sub-2-menu">
+                                <li><a href="#">경동의신기술</a></li>
+                                <li><a href="#">광산안전시스템</a></li>
+                            </ul>
+                        </li>
+                        <li class="cell">
+                            <a href="#">홍보센터</a>
+                            <ul class="sub-2-menu">
+                                <li><a href="#">특허 및 인증현황</a></li>
+                                <li><a href="#">사회공헌활동</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="global-nav">
+                    <ul class="row">
+                        <li class="nav-item cell"><a href="#" class="active">KOR</a></li>
+                        <li class="nav-item cell"><a href="#">ENG</a></li>
+                    </ul>
+                    <div class="menu-ico">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 모바일 헤더 메뉴바 -->
+    <div class="m-header mobile-only">
+        <div class="m-top-bar">
+            <div class="m-top-logo"><a href="#"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/logo_pc.png" alt=""></a></div>
+            <nav class="m-global-nav">
+                <ul class="row">
+                    <li class="m-nav-item cell"><a href="#" class="active">KOR</a></li>
+                    <li class="m-nav-item cell"><a href="#">ENG</a></li>
+                </ul>
+                <div class="m-menu-ico">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- 모바일 다운 메뉴 -->
+    <div class="m-menu-wrap mobile-only" menu-now-animating="N">
+        <div class="m-menu-container">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">사업분야</a></li>
+                <li><a href="#">기술혁신</a></li>
+                <li><a href="#">홍보센터</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 상단 메뉴 팝업창 -->
+    <div class="popup-wrap">
+        <div class="popup">
+            <div class="popup-close-btn"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/btn_close.png" alt=""></div>
+            <ul class="row">
+                <li class="cell">
+                    <a href="#">회사소개</a>
+                    <ul class="sub-2-menu">
+                        <li><a href="#">CEO 인사말</a></li>
+                        <li><a href="#">경영이념</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">C.I</a></li>
+                        <li><a href="#">관계사 소개</a></li>
+                        <li><a href="#">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">사업분야</a>
+                    <ul class="sub-2-menu">
+                        <li><a href="#">국내자원개발</a></li>
+                        <li><a href="#">해외자원개발</a></li>
+                        <li>
+                            <a href="#">엔지니어링사업</a>
+                            <ul class="sub-3-menu">
+                                <li><a href="#">광산&amp;일반장비</a></li>
+                                <li><a href="#">발전소</a></li>
+                                <li><a href="#">공사업</a></li>
+                                <li><a href="#">기술개발연구</a></li>
+                                <li><a href="#">자료실</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">임대사업</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">기술혁신</a>
+                    <ul class="sub-2-menu">
+                        <li><a href="#">경동의신기술</a></li>
+                        <li><a href="#">광산안전시스템</a></li>
+                    </ul>
+                </li>
+                <li class="cell">
+                    <a href="#">홍보센터</a>
+                    <ul class="sub-2-menu">
+                        <li><a href="#">특허 및 인증현황</a></li>
+                        <li><a href="#">사회공헌활동</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 상단 배너 슬라이더 -->
+    <section class="slider-1 panel home" data-section-name="MAIN">
+        <div class="owl-carousel owl-theme">
+            <div class="item" style="background-image:url(https://kimyang-sun.github.io/pf-img/kyungdong-img/main01_pc.jpg);">
+                <div class="txt-box">
+                    <h1>Global Kyungdong<br>with Customer trust</h1>
+                    <h2>고객이 신뢰하는 글로벌 에너지 자원 선도 기업</h2>
+                    <a href="#">
+                        Learn More >
+                    </a>
+                </div>
+            </div>
+            <div class="item text-color-white" style="background-image:url(https://kimyang-sun.github.io/pf-img/kyungdong-img/main02_pc.jpg);">
+                <div class="txt-box">
+                    <h1>Energy-based industry</h1>
+                    <h2>광산 40년! 석탄산업은 국가 경제개발의<br class="mobile-only">기반이었습니다.</h2>
+                    <a href="#">
+                        Learn More >
+                    </a>
+                </div>
+            </div>
+            <div class="item text-color-white" style="background-image:url(https://kimyang-sun.github.io/pf-img/kyungdong-img/main03_pc.jpg);">
+                <div class="txt-box">
+                    <h1>Create great value</h1>
+                    <h2>경동은 에너지 자원의 가치를 창조합니다.</h2>
+                    <a href="#">
+                        Learn More >
+                    </a>
+                </div>
+            </div>
+            <div class="item text-color-white" style="background-image:url(https://kimyang-sun.github.io/pf-img/kyungdong-img/main04_pc.jpg);">
+                <div class="txt-box">
+                    <h1>We will provide bright<br class="mobile-only">energy</h1>
+                    <h2>에너지를 통한 따뜻한 삶의 공간 창조 경동이<br class="mobile-only">함께 하겠습니다.</h2>
+                    <a href="#">
+                        Learn More >
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/scroll.png" alt="스크롤 이미지"></div>
+    </section>
+
+    <!-- 중앙 비즈니스 컨텐츠 -->
+    <section class="business panel panel1" data-section-name="BUSINESS">
+        <div class="business-content con">
+            <div class="title">
+                <h1>BUSINESS</h1><span>고객이 신뢰하는 글로벌 에너지 자원 선도 기업</span>
+            </div>
+            <div class="body">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec01_img01.jpg" alt=""></div>
+                            <div class="text">국내자원개발<br>Domestic resource</div>
+                            <div class="sub-text">경동은 수십년간 축적된 경험과 광산운영 전반의 기술력을 보유하고 있습니다.</div>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec01_img02.jpg" alt=""></div>
+                            <div class="text">해외자원개발<br>Oversea resource</div>
+                            <div class="sub-text">호주, 인도네시아를 거쳐 해외자원개발에 끊임없는 노력을 하고 있습니다.</div>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec01_img03.jpg" alt=""></div>
+                            <div class="text">엔지니어링사업<br>Engineering</div>
+                            <div class="sub-text">축적된 기술력과 지속적인 기술개발로 광산장비설계 및 제작, 각종 Plant 설계 및 시공 기술을 보유하고 있습니다.</div>
+                        </a>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec01_img04.jpg" alt=""></div>
+                            <div class="text">임대사업<br>Building Lease</div>
+                            <div class="sub-text">쾌적한 사무환경, 우수한 교통접근성은 경동빌딩의 자랑입니다.</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="more-btn"><a href="#">View More</a></div>
+        </div>
+    </section>
+
+    <!-- 중앙 기술 컨텐츠 -->
+    <section class="tech-innovation panel panel2" data-section-name="TECHNOLOGY">
+        <div class="tech-content con">
+            <div class="title">
+                <h1>TECHNOLOGICAL <br class="mobile-only">INNOVATION</h1>
+            </div>
+            <div class="body">
+                <ul class="row">
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec02_img01.jpg" alt=""></div>
+                            <div class="inner-text">
+                                <div class="inner-text-1">경동의 신기술</div>
+                                <div class="inner-text-2">Technology</div>
+                                <div class="inner-ico"></div>
+                            </div>
+                        </a>
+                        <div class="text">경동은 지속적인 기술개발과 투자로 국내광산<br> 최고의 기술력을 자랑하고 있습니다.</div>
+                        <div class="more-btn"><a href="#">View More</a></div>
+                    </li>
+                    <li class="cell">
+                        <a href="#">
+                            <div class="img-box"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/sec02_img02.jpg" alt=""></div>
+                            <div class="inner-text">
+                                <div class="inner-text-1">광산안전시스템</div>
+                                <div class="inner-text-2">A.B.C Safety</div>
+                                <div class="inner-ico"></div>
+                            </div>
+                        </a>
+                        <div class="text">거대한 자연을 상대로 운영되는 광산에서의 안전은<br> 아무리 강조해도 지나침이 없을 것입니다.</div>
+                        <div class="more-btn"><a href="#">View More</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 사회 공헌 컨텐츠 -->
+    <section class="public-relations panel panel3" data-section-name="PUBLIC&nbspRELATIONS">
+        <div class="public-wrap">
+            <div class="public-con con">
+                <div class="text-con">
+                    <span>사회공헌</span>
+                    <div class="title">PUBLIC RELATIONS</div>
+                    <span class="body">
+                        ㈜경동은 나눔문화, 기업의 사회공헌, 자원봉사 등을 통한<br class="pc-only">
+                        지역 네트워크 구축과 사회연대의식 함양과 소외계층<br class="pc-only">
+                        삶의 질 향상을 위해 적극 노력하고 있습니다.
+                    </span>
+                    <div class="more-btn"><a href="#">View More</a></div>
+                </div>
+                <div class="img-con">
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#">
+                                <div class="img-box">
+                                    <div class="img" style="background:url('https://kimyang-sun.github.io/pf-img/kyungdong-img/pub_img_01.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                                    <div class="dummy"></div>
+                                </div>
+                                <span>하천정화</span>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="img-box">
+                                    <div class="img" style="background:url('https://kimyang-sun.github.io/pf-img/kyungdong-img/pub_img_02.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                                    <div class="dummy"></div>
+                                </div>
+                                <span>도로정화활동</span>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="img-box">
+                                    <div class="img" style="background:url('https://kimyang-sun.github.io/pf-img/kyungdong-img/pub_img_03.jpg') no-repeat 50% 50%; background-size: cover;"></div>
+                                    <div class="dummy"></div>
+                                </div>
+                                <span>쌀나눔봉사</span>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="img-box">
+                                    <div class="img" style="background:url('https://kimyang-sun.github.io/pf-img/kyungdong-img/pub_img_04.jpeg') no-repeat 50% 50%; background-size: cover;"></div>
+                                    <div class="dummy"></div>
+                                </div>
+                                <span>연탄나눔봉사</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 푸터 영역 컨텐츠 -->
+    <section class="footer-area panel panel4" data-section-name="ABOUT">
+        <div class="about-area">
+            <div class="about-us con row">
+                <div class="inner-text">
+                    <div class="title">ABOUT
+                        <p>KYUNGDONG</p>
+                    </div>
+                    <div class="body">
+                        서민연료인 연탄에서 신재생 에너지까지 에너지를 통한<br> 따뜻한 삶의 공간 창조 바로 경동이 함께합니다.
+                    </div>
+                    <div class="more-btn"><a href="#">Learn More</a></div>
+                </div>
+                <div class="inner-list cell-right">
+                    <ul class="row">
+                        <li class="cell">
+                            <a href="#">
+                                <div class="content-box">
+                                    <span class="ico"></span>
+                                    <div class="list-text">CEO 인사말<span>CEO’s Greetings</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="content-box">
+                                    <span class="ico"></span>
+                                    <div class="list-text">경영이념<span>Management Philosophy</span></div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="cell">
+                            <a href="#">
+                                <div class="content-box">
+                                    <span class="ico"></span>
+                                    <div class="list-text">관계사<span>Business Overview</span></div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="address con">
+                상호 : (주)경동 사업자등록번호 : 222-81-03192
+                <br> 본사 : 경기도 성남시 분당구 수내로 46번길 4 경동빌딩 11층 TEL : 031-738-1300 FAX : 031-738-1313
+                <br> ㈜경동 상덕광업소 : 강원도 삼척시 도계읍 도상로 512 TEL : 033-541-0071 FAX : 033-541-6003
+                <div class="copyright">Copyright © KYUNGDONG. All Rights Reserved.</div>
+            </div>
+            <div class="top-btn">
+                <span class="img-box top"><img src="https://kimyang-sun.github.io/pf-img/kyungdong-img/top.png" alt=""></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- 자바스크립트 불러오기 -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
