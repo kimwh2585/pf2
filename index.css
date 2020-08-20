@@ -93,7 +93,7 @@ html, body {
 /* 스크롤리파이 적용 */
 .pagination {
     position: fixed;
-    left: calc(50% + 620px);
+    left: calc(50% + 680px);
     top: 50%;
     transform: translateY(-50%);
     z-index: 10;
